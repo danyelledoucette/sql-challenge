@@ -190,3 +190,11 @@ SELECT
 FROM employees
 GROUP BY last_name
 ORDER BY count(last_name) desc;
+
+-- Epilogue: ...you hear the words, "Search your ID number." 
+-- You look down at your badge to see that your employee ID number is 499942.
+
+SELECT * 
+FROM employees AS e
+WHERE e.emp_no = '499942';
+
